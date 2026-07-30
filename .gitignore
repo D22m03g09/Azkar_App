@@ -1,35 +1,32 @@
 ```
-# Gradle
-.gradle/
+# Build artifacts
 build/
-!gradle/wrapper/gradle-wrapper.jar
+*.apk
+*.aar
+*.jar
+*.class
 
-# IDE
-.idea/
-*.iml
-*.ipr
-*.iws
-.vscode/
+# Dependencies
+.gradle/
+node_modules/
+venv/
+.venv/
 
-# Logs
+# Logs and temp files
 *.log
+*.tmp
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Dependencies
-node_modules/
-vendor/
-lib/
+# Editors
+.vscode/
+.idea/
+*.swp
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Temporary files
-*.tmp
-*.temp
-*~
 ```
