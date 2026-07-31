@@ -5,7 +5,7 @@ data class AzkarCategory(
     val title: String,
     val titleArabic: String,
     val description: String,
-    val iconResId: Int = 0
+    val icon: String = ""
 )
 
 data class Zikr(

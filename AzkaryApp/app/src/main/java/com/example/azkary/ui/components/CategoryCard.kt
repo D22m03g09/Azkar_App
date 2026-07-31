@@ -40,12 +40,21 @@ fun CategoryCard(
             Column(
                 modifier = Modifier.weight(1f)
             ) {
-                Text(
-                    text = category.title,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    color = IslamicGreen
-                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = category.icon,
+                        fontSize = 28.sp,
+                        modifier = Modifier.padding(end = 12.dp)
+                    )
+                    Text(
+                        text = category.title,
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = IslamicGreen
+                    )
+                }
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
                     text = category.titleArabic,

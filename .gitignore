@@ -1,32 +1,57 @@
 ```
-# Build artifacts
-build/
-*.apk
-*.aar
-*.jar
+# Compiled and build artifacts
 *.class
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+build/
+dist/
 
 # Dependencies
 .gradle/
-node_modules/
-venv/
-.venv/
+target/
+__pycache__/
+*.pyc
+**/__pycache__/
+*.pyo
+*.pyd
 
-# Logs and temp files
-*.log
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
 *.tmp
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
-*.swp
-
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
+
+# Android specific
+*.apk
+*.aar
+*.dex
+local.properties
+captures/
+.externalNativeBuild
+.gradle
+*.keystore
+debug.keystore
 ```
