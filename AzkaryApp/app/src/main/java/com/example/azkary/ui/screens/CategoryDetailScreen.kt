@@ -29,7 +29,7 @@ fun CategoryDetailScreen(
             TopAppBar(
                 title = { 
                     Text(
-                        category?.title ?: "Category",
+                        category?.title ?: "Категория",
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onPrimary
                     ) 
@@ -38,7 +38,7 @@ fun CategoryDetailScreen(
                     IconButton(onClick = { navController.popBackStack() }) {
                         Icon(
                             imageVector = Icons.Default.ArrowBack,
-                            contentDescription = "Back",
+                            contentDescription = "Назад",
                             tint = MaterialTheme.colorScheme.onPrimary
                         )
                     }
@@ -57,7 +57,7 @@ fun CategoryDetailScreen(
                 contentAlignment = androidx.compose.ui.Alignment.Center
             ) {
                 Text(
-                    text = "No Adhkar available in this category yet.",
+                    text = "В этой категории пока нет азкаров.",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
                 )
@@ -76,6 +76,11 @@ fun CategoryDetailScreen(
                             .fillMaxWidth()
                             .padding(horizontal = 16.dp, vertical = 12.dp)
                     ) {
+                        Text(
+                            text = category?.icon ?: "",
+                            fontSize = 36.sp,
+                            modifier = Modifier.padding(bottom = 8.dp)
+                        )
                         Text(
                             text = category?.titleArabic ?: "",
                             style = MaterialTheme.typography.headlineSmall,
@@ -101,7 +106,7 @@ fun CategoryDetailScreen(
                 item {
                     Spacer(modifier = Modifier.height(24.dp))
                     Text(
-                        text = "✨ Keep remembering Allah",
+                        text = "✨ Продолжайте поминать Аллаха",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
                         modifier = Modifier

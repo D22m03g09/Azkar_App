@@ -29,7 +29,7 @@ fun HomeScreen(
             TopAppBar(
                 title = { 
                     Text(
-                        "Azkary",
+                        "📿 Азкары",
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onPrimary
                     ) 
@@ -55,14 +55,14 @@ fun HomeScreen(
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
-                        text = "📿 Azkary - أذكار",
+                        text = "Добро пожаловать",
                         style = MaterialTheme.typography.headlineMedium,
                         fontWeight = FontWeight.Bold,
                         color = IslamicGreen
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
-                        text = "Your daily companion for Adhkar and Duas",
+                        text = "Ваш ежедневный спутник для азкаров и дуа",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
                     )
@@ -83,7 +83,7 @@ fun HomeScreen(
             item {
                 Spacer(modifier = Modifier.height(24.dp))
                 Text(
-                    text = "May Allah accept our supplications",
+                    text = "Да примет Аллах наши мольбы",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
                     modifier = Modifier
