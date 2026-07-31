@@ -1,57 +1,75 @@
 ```
-# Compiled and build artifacts
+# Android build artifacts
+*.apk
+*.aar
+*.jar
 *.class
-*.o
-*.obj
-*.so
-*.a
-*.dll
-*.exe
-*.out
 build/
-dist/
+app/build/
 
-# Dependencies
+# Android Studio
 .gradle/
-target/
-__pycache__/
-*.pyc
-**/__pycache__/
-*.pyo
-*.pyd
-
-# Editors and IDEs
-.vscode/
+*.iml
+*.iws
+*.idea/
 .idea/
-*.swp
-*.swo
-*.tmp
 
-# Logs
+# Generated files
+gen/
+out/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files
 *.log
 
-# Coverage
-.coverage
-coverage/
-htmlcov/
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Environment
+# Backup files
+*~
+*.bak
+*.swp
+
+# Environment specific files
 .env
 .env.local
 *.env.*
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Coverage reports
+coverage/
+*.gcov
+*.lcov
+*.profdata
 
-# Android specific
-*.apk
-*.aar
-*.dex
-local.properties
-captures/
-.externalNativeBuild
-.gradle
-*.keystore
-debug.keystore
+# Python related (if any mixed projects)
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.so
+*.egg-info/
+.eggs/
+
+# Node.js (if any mixed projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
 ```
