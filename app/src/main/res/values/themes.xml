@@ -1,9 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AzkarApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.AzkaryApp" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:colorPrimary">@color/islamic_green</item>
+        <item name="android:colorPrimaryDark">@color/islamic_green_dark</item>
+        <item name="android:colorAccent">@color/islamic_green_light</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/islamic_green</item>
     </style>
-
-    <style name="Theme.AzkarApp" parent="Base.Theme.AzkarApp" />
 </resources>
