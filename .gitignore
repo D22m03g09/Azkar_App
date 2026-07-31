@@ -1,61 +1,32 @@
 ```
-# Gradle
-.gradle/
-gradle-home/
-
-# Android Studio
-.idea/
-*.iml
-*.iws
-*.suo
-*.user
-*.userosscache
-*.sw?
-*~.nib
-local.properties
-captures/
-*.cap
-
-# Android
-# Built application files
+# Build artifacts
+build/
 *.apk
-*.ap_
-*.aab
-
-# Files for the ART/Dalvik VM
-*.dex
-
-# Java class files
+*.aar
+*.jar
 *.class
 
-# Generated files
-bin/
-gen/
-out/
+# Dependencies
+.gradle/
+node_modules/
+venv/
+.venv/
 
-# Android packages
-*.jar
-*.war
-*.ear
-
-# NDK
-obj/
-
-# Proguard
-proguard/
-
-# Log Files
+# Logs and temp files
 *.log
+*.tmp
 
-# Android Lint
-lint-results-*.xml
+# Environment
+.env
+.env.local
+*.env.*
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Editors
+.vscode/
+.idea/
+*.swp
 
-# Build cache
-.build-cache/
-
-# Unit test results
-test-results/
+# OS
+.DS_Store
+Thumbs.db
 ```
